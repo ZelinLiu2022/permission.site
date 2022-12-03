@@ -1,0 +1,19 @@
+{
+  "id": "/",
+  "short_name": "permission.site",
+  "name": "Permission Site",
+  "icons": [
+    {
+      "src": "app-icon.png",
+      "sizes": "288x288",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "scope": "/",
+  "isolated_storage": true,
+  "permissions_policy": {
+  }
+}
