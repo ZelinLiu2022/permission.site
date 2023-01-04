@@ -15,5 +15,19 @@
   "scope": "/",
   "isolated_storage": true,
   "permissions_policy": {
+    "geolocation": ["*"],
+    "camera": ["*"],
+    "microphone": ["*"],
+    "display-capture": ["*"],
+    "midi": ["*"],
+    "bluetooth": ["*"],
+    "usb": ["*"],
+    "serial": ["*"],
+    "hid": ["*"],
+    "encrypted-media": ["*"],
+    "idle-detection": ["*"],
+    "publickey-credentials-get": ["*"],
+    "xr-spatial-tracking": ["*"],
+    "fullscreen": ["*"]
   }
 }
