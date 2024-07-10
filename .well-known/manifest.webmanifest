@@ -1,21 +1,22 @@
 {
   "id": "/",
+  "version": "1.0.0",
   "short_name": "permission.site",
   "name": "Permission Site",
   "icons": [
     {
-      "src": "app-icon.png",
+      "src": "/app-icon.png",
       "sizes": "288x288",
       "type": "image/png",
       "purpose": "any maskable"
     }
   ],
-  "start_url": "/",
+  "start_url": "/permission.html",
   "display": "standalone",
   "scope": "/",
-  "isolated_storage": true,
   "permissions_policy": {
-    "geolocation": ["*"],
+    "cross-origin-isolated": [ "*"],
+    "geolocation": [ "*"],
     "camera": ["*"],
     "microphone": ["*"],
     "display-capture": ["*"],
@@ -23,11 +24,22 @@
     "bluetooth": ["*"],
     "usb": ["*"],
     "serial": ["*"],
+    "file-system-access": ["*"],
     "hid": ["*"],
     "encrypted-media": ["*"],
     "idle-detection": ["*"],
     "publickey-credentials-get": ["*"],
     "xr-spatial-tracking": ["*"],
     "fullscreen": ["*"]
-  }
+  },
+  "protocol_handlers": [
+    {
+      "protocol": "web+tea",
+      "url": "/tea?type=%s"
+    },
+    {
+      "protocol": "web+coffee",
+      "url": "/coffee?type=%s"
+    }
+  ]
 }
